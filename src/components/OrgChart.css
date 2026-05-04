@@ -28,3 +28,15 @@
     width: 70%;
     background-color: black;
 }
+
+.org-child-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.org-child-line {
+    width: 2px;
+    height: 20px;
+    background-color: black;
+}

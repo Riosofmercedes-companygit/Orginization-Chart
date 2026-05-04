@@ -1,3 +1,5 @@
+import testPhoto from "../assets/react.svg"
+
 export const employees = {
   name: "CEO Name",
   title: "Chief Executive Officer",
@@ -7,7 +9,7 @@ export const employees = {
   location: "Unknown",
   email: "",
   phone: "",
-  image: "",
+  image: testPhoto,
   children: [
     {
       name: "CMO Name",
