@@ -1,7 +1,7 @@
 export const employees = {
   name: "CEO Name",
   title: "Chief Executive Officer",
-  department: "Executive",
+  department: "Executive Leadership Team",
   level: "CEO",
   category: "Leadership",
   location: "Unknown",
@@ -12,7 +12,7 @@ export const employees = {
     {
       name: "CMO Name",
       title: "Chief Marketing Officer",
-      department: "Marketing",
+      department: "Executive Leadership Team",
       level: "Executive",
       category: "Leadership",
       location: "Unknown",
@@ -24,7 +24,7 @@ export const employees = {
     {
       name: "COO Name",
       title: "Chief Operations Officer",
-      department: "Operations",
+      department: "Executive Leadership Team",
       level: "Executive",
       category: "Leadership",
       location: "Unknown",
@@ -36,7 +36,7 @@ export const employees = {
     {
       name: "CFO Name",
       title: "Chief Financial Officer",
-      department: "Finance",
+      department: "Executive Leadership Team",
       level: "Executive",
       category: "Leadership",
       location: "Unknown",
