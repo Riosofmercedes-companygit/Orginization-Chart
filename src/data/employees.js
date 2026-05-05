@@ -46,6 +46,43 @@ export const employees = {
       phone: "",
       image: "",
       children: []
+    },
+    {
+      name: "CTO Name",
+      title: "Chief Technology Officer",
+      department: "Executive Leadership Team",
+      level: "Executive",
+      category: "Leadership",
+      location: "Unknown",
+      email: "",
+      phone: "",
+      image: "",
+      children: [
+        {
+          name: "Intern Name",
+          title: " IT Intern",
+          department: "Intern Team",
+          level: "Executive",
+          category: "Leadership",
+          location: "Unknown",
+          email: "",
+          phone: "",
+          image: "",
+          children: []
+        }
+      ]
+    },
+    {
+      name: "CHRO Name",
+      title: "Chief Human Resources Officer",
+      department: "Executive Leadership Team",
+      level: "Executive",
+      category: "Leadership",
+      location: "Unknown",
+      email: "",
+      phone: "",
+      image: "",
+      children: []
     }
   ]
 };

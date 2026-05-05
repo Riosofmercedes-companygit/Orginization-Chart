@@ -46,9 +46,6 @@ function OrgChart({ employee, onSelect }) {
         {/* Vertical line from current employee down */}
         <div className="org-line"></div>
 
-        {/* Horizontal line connecting all children */}
-        <div className="org-horizontal-line"></div>
-
         {/* Container for all direct reports (displayed in a row) */}
         <div className="org-children">
 
