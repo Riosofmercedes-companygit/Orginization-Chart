@@ -3,6 +3,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f5f0e8;
   color: #2b2118;
+  overflow-x: auto;
 }
 
 .modal {
@@ -61,17 +62,28 @@ body {
   object-fit: cover;
 }
 
+.app-header {
+  padding: 24px 32px;
+}
+
 .app-header h1 {
   margin: 0;
-  font-size: 42px;
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 1px;
+  margin-top: 60px;
 }
 
 .app-subtitle {
   margin-top: 10px;
   font-size: 16px;
-  color: #e7d7c3;
+  color: #7a5a3d;
   max-width: 600px;
   line-height: 1.5;
+}
+
+.chart-panel {
+  overflow-x: auto;
+  width: fit-content;
+  min-width: 100%;
 }

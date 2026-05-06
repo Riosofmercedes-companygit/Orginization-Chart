@@ -48,10 +48,22 @@ export const employees = {
       children: []
     },
     {
-      name: "CTO Name",
-      title: "Chief Technology Officer",
-      department: "Executive Leadership Team",
-      level: "Executive",
+      name: "SaMD Name",
+      title: "Sales and Marketing Director",
+      department: "Sales and Marketing",
+      level: "",
+      category: "Leadership",
+      location: "Unknown",
+      email: "",
+      phone: "",
+      image: "",
+      children: []
+    },
+    {
+      name: "Human Resources Director Name",
+      title: "Human Resources Director",
+      department: "Human Resources",
+      level: "",
       category: "Leadership",
       location: "Unknown",
       email: "",
@@ -59,11 +71,35 @@ export const employees = {
       image: "",
       children: [
         {
-          name: "Intern Name",
-          title: " IT Intern",
-          department: "Intern Team",
-          level: "Executive",
-          category: "Leadership",
+          name: "HR Emp 1",
+          title: "HR Employee",
+          department: "Human Resources",
+          level: "Employee",
+          category: "Employment",
+          location: "Unknown",
+          email: "",
+          phone: "",
+          image: "",
+          children: []
+        },
+        {
+          name: "HR Emp 2",
+          title: "HR Employee",
+          department: "Human Resources",
+          level: "Employee",
+          category: "Employment",
+          location: "Unknown",
+          email: "",
+          phone: "",
+          image: "",
+          children: []
+        },
+        {
+          name: "HR Emp 3",
+          title: "HR Employee",
+          department: "Human Resources",
+          level: "Employee",
+          category: "Employment",
           location: "Unknown",
           email: "",
           phone: "",
@@ -71,18 +107,6 @@ export const employees = {
           children: []
         }
       ]
-    },
-    {
-      name: "CHRO Name",
-      title: "Chief Human Resources Officer",
-      department: "Executive Leadership Team",
-      level: "Executive",
-      category: "Leadership",
-      location: "Unknown",
-      email: "",
-      phone: "",
-      image: "",
-      children: []
     }
   ]
 };

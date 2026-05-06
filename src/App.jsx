@@ -1,6 +1,7 @@
 import OrgChart from "./components/OrgChart";
 import { useState } from "react";
 import { employees } from "./data/employees";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [selectedEmployee, setSelectedEmployee] = useState(null);
@@ -11,9 +12,11 @@ function App() {
 
   return (
     <div className="app">
+
+      <Navbar />
+
       <header className="app-header">
         <div>
-          <p className="app-label">Rios of Mercedes</p>
 
           <h1>Organization Chart</h1>
 
@@ -27,6 +30,7 @@ function App() {
         <OrgChart
           employee={employees}
           onSelect={handleSelect}
+          startExpanded={true}
         />
       </main>
 
