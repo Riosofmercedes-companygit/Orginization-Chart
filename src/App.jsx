@@ -12,69 +12,61 @@ function App() {
 
   return (
     <div className="app">
-
       <Navbar />
 
       <header className="app-header">
         <div>
-
           <h1>Organization Chart</h1>
-
           <p className="app-subtitle">
             Company leadership and department structure
           </p>
         </div>
       </header>
 
-      <main className="chart-panel">
-        <OrgChart
-          employee={employees}
-          onSelect={handleSelect}
-          startExpanded={true}
-        />
-      </main>
+      <div className="page-layout">
+        <main className="chart-panel">
+          <OrgChart
+            employee={employees}
+            onSelect={handleSelect}
+            startExpanded={true}
+          />
+        </main>
 
-      {selectedEmployee && (
-        <div
-          className="modal"
-          onClick={() => setSelectedEmployee(null)}
-        >
-          <div
-            className="modal-content"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="modal-body">
-              <div className="modal-photo">
-                {selectedEmployee.image ? (
-                  <img
-                    src={selectedEmployee.image}
-                    alt={selectedEmployee.name}
-                  />
-                ) : (
-                  <span>No Photo</span>
-                )}
-              </div>
+        {selectedEmployee && (
+          <aside className="employee-panel">
+            <button
+              className="panel-close"
+              onClick={() => setSelectedEmployee(null)}
+            >
+              ×
+            </button>
 
-              <h2>{selectedEmployee.name}</h2>
+            <div className="panel-photo">
+              {selectedEmployee.image ? (
+                <img
+                  src={selectedEmployee.image}
+                  alt={selectedEmployee.name}
+                />
+              ) : (
+                <span>No Photo</span>
+              )}
+            </div>
 
+            <h2>{selectedEmployee.name}</h2>
+
+            <p className="panel-title">
+              {selectedEmployee.title}
+            </p>
+
+            <div className="panel-info">
               <p>
-                <strong>Title:</strong> {selectedEmployee.title}
+                <strong>Department:</strong>{" "}
+                {selectedEmployee.department}
               </p>
 
               <p>
-                <strong>Department:</strong> {selectedEmployee.department}
-              </p>
-
-              <p>
-                <strong>Level:</strong> {selectedEmployee.level}
-              </p>
-
-              <p>
-                <strong>Category:</strong> {selectedEmployee.category}
-              </p>
-
-              <p>
-                <strong>Location:</strong> {selectedEmployee.location}
+                <strong>Location:</strong>{" "}
+                {selectedEmployee.location}
               </p>
 
               <p>
@@ -92,15 +84,9 @@ function App() {
                 {selectedEmployee.children.length}
               </p>
             </div>
-
-            <button
-              onClick={() => setSelectedEmployee(null)}
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      )}
+          </aside>
+        )}
+      </div>
     </div>
   );
 }
